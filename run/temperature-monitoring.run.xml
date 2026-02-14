@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="temperature-monitoring" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.fairplay.sensor.temperature.monitoring.TemperatureMonitoringApplication" />
+    <module name="temperature-monitoring.main" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/microservices/temperature-monitoring" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
