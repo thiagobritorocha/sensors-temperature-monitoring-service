@@ -1,8 +1,16 @@
 plugins {
 	id 'idea'
 	id 'java'
+	id 'com.diffplug.spotless' version '6.21.0'
 	id 'org.springframework.boot' version '3.5.10'
 	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+spotless {
+	java {
+		googleJavaFormat()
+		targetExclude("build/generated/**/*.java")
+	}
 }
 
 group = 'com.fairplay.sensor'
@@ -33,6 +41,7 @@ repositories {
 }
 
 dependencies {
+	implementation 'io.hypersistence:hypersistence-tsid:2.1.4'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
